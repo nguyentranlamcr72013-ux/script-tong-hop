@@ -42,7 +42,7 @@ local player = game.Players.LocalPlayer
      local Tab8o = MakeTab({Name = "Script supported farm bouty"})
      local Tab9o = MakeTab({Name = "Script growagarden 2(Nêntreoaccsevervip)"})
      local Tab10o = MakeTab({Name = "99 Nights in the Forest"})
-     local Tab11o = MakeTab({Name = ""})
+     local Tab11o = MakeTab({Name = "loi"})
 
 
 ------- BUTTON
