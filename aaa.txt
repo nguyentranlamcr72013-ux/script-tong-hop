@@ -140,7 +140,7 @@ local player = game.Players.LocalPlayer
 
     end
 })
-    AddButton(Tab2o, {
+    AddButton(Tab3o, {
      Name = "Gravity Hub",
     Callback = function()
 
@@ -172,8 +172,8 @@ local player = game.Players.LocalPlayer
     end
 })
   
-   AddButton(Tab2o, {
-     Name = "Nejihub",
+  AddButton(Tab2o, {
+    Name = "Nejihub",
     Callback = function()
 
         game:GetService("StarterGui"):SetCore("SendNotification", {
@@ -182,28 +182,17 @@ local player = game.Players.LocalPlayer
             Duration = 3
         })
 
-        local success, err = pcall(function()
-            repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
+        repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
 
-            loadstring(game:HttpGet(
-                "https://raw.githubusercontent.com/Dev-NejiDepzai/Bloxfruits/refs/heads/main/Main.lua"
-            ))()
-        end)
+        loadstring(game:HttpGet(
+            "https://raw.githubusercontent.com/Dev-NejiDepzai/Bloxfruits/refs/heads/main/Main.lua"
+        ))()
 
-        if success then
-            game:GetService("StarterGui"):SetCore("SendNotification", {
-                Title = "Laam Hub 🇻🇳",
-                Text = "✅ Đã mở Nejihub thành công!",
-                Duration = 3
-            })
-        else
-            game:GetService("StarterGui"):SetCore("SendNotification", {
-                Title = "Laam Hub 🇻🇳",
-                Text = "❌ Mở Nejihub thất bại!",
-                Duration = 3
-            })
-            warn(err)
-        end
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+            Title = "Laam Hub 🇻🇳",
+            Text = "✅ Đã mở Nejihub thành công!",
+            Duration = 3
+        })
 
     end
 })
