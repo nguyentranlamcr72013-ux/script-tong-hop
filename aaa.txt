@@ -494,7 +494,7 @@ AddButton(Tab9o, {
         if success then
             game:GetService("StarterGui"):SetCore("SendNotification", {
                 Title = "Laam Hub 🇻🇳",
-                Text = "✅ Đã mở AJJANS Hub Hub thành công!",
+                Text = "✅ Đã mở AJJANS Hub thành công!",
                 Duration = 3
             })
         else
@@ -543,42 +543,7 @@ AddButton(Tab9o, {
 })
 
 AddButton(Tab8o, {
-    Name = "Hermanos Hub",
-    Callback = function()
-
-        game:GetService("StarterGui"):SetCore("SendNotification", {
-            Title = "Laam Hub 🇻🇳",
-            Text = "Đang mở Axonic Hub...",
-            Duration = 3
-        })
-
-        local success, err = pcall(function()
-
-            local script_mode = "PVP" -- PVP, FARM
-
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/hermanos-dev/hermanos-hub/refs/heads/main/Loader.lua"))()
-
-        end)
-
-        if success then
-            game:GetService("StarterGui"):SetCore("SendNotification", {
-                Title = "Laam Hub 🇻🇳",
-                Text = "✅ Đã mở Hermanos Hub Hub thành công!",
-                Duration = 3
-            })
-        else
-            game:GetService("StarterGui"):SetCore("SendNotification", {
-                Title = "Laam Hub 🇻🇳",
-                Text = "❌ Mở Hermanos Hub thất bại!",
-                Duration = 3
-            })
-            warn(err)
-        end
-
-    end
-
-AddButton(Tab5o, {
-    Name = "Teddy Hub ",
+    Name = "Hermanos Hub ",
     Callback = function()
 
         game:GetService("StarterGui"):SetCore("SendNotification", {
@@ -588,9 +553,9 @@ AddButton(Tab5o, {
         })
 
         local success, err = pcall(function()
-            repeat task.wait() until game:IsLoaded() and game:GetService("Players") and game.Players.LocalPlayer and game.Players.LocalPlayer:FindFirstChild("PlayerGui")
+            local script_mode = "PVP" -- PVP, FARM
 
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/Teddyseetink/Haidepzai/refs/heads/main/TEDDYHUB-FREEMIUM"))()
+             loadstring(game:HttpGet("https://raw.githubusercontent.com/hermanos-dev/hermanos-hub/refs/heads/main/Loader.lua"))()
 
         end)
 
@@ -604,6 +569,41 @@ AddButton(Tab5o, {
             game:GetService("StarterGui"):SetCore("SendNotification", {
                 Title = "Laam Hub 🇻🇳",
                 Text = "❌ Mở Hermanos Hub thất bại!",
+                Duration = 3
+            })
+            warn(err)
+        end
+
+    end
+})
+
+AddButton(Tab5o, {
+    Name = "Teddy Hub ",
+    Callback = function()
+
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+            Title = "Laam Hub 🇻🇳",
+            Text = "Đang mở Teddy Hub...",
+            Duration = 3
+        })
+
+        local success, err = pcall(function()
+            repeat task.wait() until game:IsLoaded() and game:GetService("Players") and game.Players.LocalPlayer and game.Players.LocalPlayer:FindFirstChild("PlayerGui")
+
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Teddyseetink/Haidepzai/refs/heads/main/TEDDYHUB-FREEMIUM"))()
+
+        end)
+
+        if success then
+            game:GetService("StarterGui"):SetCore("SendNotification", {
+                Title = "Laam Hub 🇻🇳",
+                Text = "✅ Đã mở Teddy Hub thành công!",
+                Duration = 3
+            })
+        else
+            game:GetService("StarterGui"):SetCore("SendNotification", {
+                Title = "Laam Hub 🇻🇳",
+                Text = "❌ Mở Teddy Hub thất bại!",
                 Duration = 3
             })
             warn(err)
