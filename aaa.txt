@@ -397,7 +397,7 @@ AddButton(Tab9o, {
 
         local success, err = pcall(function()
             loadstring(game:HttpGet(
-              "https://matrixmod.site/loader/18"))(),
+              "https://matrixmod.site/loader/18"))()
         end)
 
         if success then
