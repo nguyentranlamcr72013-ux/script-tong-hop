@@ -364,7 +364,7 @@ AddButton(Tab9o, {
 
         local success, err = pcall(function()
             loadstring(game:HttpGet(
-              "https://raw.githubusercontent.com/Kenniel123/Grow-A-Garden-2/refs/heads/main/Grow%20A%20Garden%202"))(),
+              "https://raw.githubusercontent.com/Kenniel123/Grow-A-Garden-2/refs/heads/main/Grow%20A%20Garden%202"))()
 
         end)
 
@@ -430,7 +430,7 @@ AddButton(Tab4o, {
 
         local success, err = pcall(function()
              loadstring(game:HttpGet(
-              "https://api.luarmor.net/files/v4/loaders/4f220b52905d70e4e7600fcc073fac2a.lua"))(),
+              "https://api.luarmor.net/files/v4/loaders/4f220b52905d70e4e7600fcc073fac2a.lua"))()
         end)
 
         if success then
@@ -496,7 +496,7 @@ AddButton(Tab9o, {
 
         local success, err = pcall(function()
              loadstring(game:HttpGet(
-              "https://api.luarmor.net/files/v4/loaders/359e97f8618e9008afe5f496184ebb7c.lua"))(),
+              "https://api.luarmor.net/files/v4/loaders/359e97f8618e9008afe5f496184ebb7c.lua"))()
 
             
 
@@ -531,7 +531,7 @@ AddButton(Tab9o, {
         })
 
         local success, err = pcall(function()
-             loadstring(game:HttpGet("https://api.wishub.cloud/files/loader.lua"))(),
+             loadstring(game:HttpGet("https://api.wishub.cloud/files/loader.lua"))()
             
         end)
 
@@ -567,7 +567,7 @@ AddButton(Tab8o, {
 
             local script_mode = "PVP" -- PVP, FARM
 
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/hermanos-dev/hermanos-hub/refs/heads/main/Loader.lua"))(),
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/hermanos-dev/hermanos-hub/refs/heads/main/Loader.lua"))()
 
         end)
 
@@ -588,3 +588,12 @@ AddButton(Tab8o, {
 
     end
 })
+
+
+
+
+
+
+
+
+  
