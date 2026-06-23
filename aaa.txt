@@ -32,22 +32,22 @@ local player = game.Players.LocalPlayer
       })
       
 ------ Tab
-     local Tab1o = MakeTab({Name = "Giới thiệu"})
-     local Tab2o = MakeTab({Name = "Script Redz Hub"})
-     local Tab3o = MakeTab({Name = "Script Banana Hub"})
-     local Tab4o = MakeTab({Name = "Script khác"})
-     local Tab5o = MakeTab({Name = "Script hop sever BloxFruit"})
-     local Tab6o = MakeTab({Name = "Script salor piece"})
-     local Tab7o = MakeTab({Name = "Script kaitun BloxFruit"})
-     local Tab8o = MakeTab({Name = "Script supported farm bouty"})
-     local Tab9o = MakeTab({Name = "Script growagarden 2(Nêntreoaccsevervip)"})
-     local Tab10o = MakeTab({Name = "99 Nights in the Forest"})
-     local Tab11o = MakeTab({Name = "loi"})
+     local Tab1o = MakeTab({Name = "📖 Giới thiệu"})
+     local Tab2o = MakeTab({Name = "🔴 Script Redz Hub"})
+     local Tab3o = MakeTab({Name = "🍌 Script Banana Hub"})
+     local Tab4o = MakeTab({Name = "📦 Script khác"})
+     local Tab5o = MakeTab({Name = "🔄 Hop Server Blox Fruit"})
+     local Tab6o = MakeTab({Name = "🏴‍☠️ Sailor Piece"})
+     local Tab7o = MakeTab({Name = "⚔️ Kaitun Blox Fruit"})
+     local Tab8o = MakeTab({Name = "💀 Farm Bounty"})
+     local Tab9o = MakeTab({Name = "🌱 Grow A Garden 2"})
+     local Tab10o = MakeTab({Name = "🌙 99 Nights In The Forest"})
+     local Tab11o = MakeTab({Name = "⚙️ Cài Đặt"})
 
 
 ------- BUTTON
     
-    AddButton(Tab1o, {
+    AddButton(Tab2o, {
      Name = "Gravity Hub",
     Callback = function()
 
@@ -79,7 +79,7 @@ local player = game.Players.LocalPlayer
     end
 })
   
-    AddButton(Tab2o, {
+    AddButton(Tab3o, {
     Name = "Longhihi BananaHub",
     Callback = function()
 
@@ -109,7 +109,7 @@ local player = game.Players.LocalPlayer
 
     end
 })
-   AddButton(Tab2o, {
+   AddButton(Tab3o, {
       Name = "TrauHub+get key",
     Callback = function()
 
@@ -140,7 +140,7 @@ local player = game.Players.LocalPlayer
 
     end
 })
-    AddButton(Tab1o, {
+    AddButton(Tab2o, {
      Name = "Gravity Hub",
     Callback = function()
 
@@ -172,7 +172,7 @@ local player = game.Players.LocalPlayer
     end
 })
   
-   AddButton(Tab1o, {
+   AddButton(Tab2o, {
      Name = "Nejihub",
     Callback = function()
 
@@ -209,7 +209,7 @@ local player = game.Players.LocalPlayer
 })
 
 
-    AddButton(Tab3o, {
+    AddButton(Tab4o, {
      Name = "Mystichub",
     Callback = function()
 
@@ -248,7 +248,7 @@ local player = game.Players.LocalPlayer
 })
 
 
-   AddButton(Tab2o, {
+   AddButton(Tab3o, {
      Name = "Panda Hub",
     Callback = function()
 
@@ -344,6 +344,243 @@ AddButton(Tab9o, {
             game:GetService("StarterGui"):SetCore("SendNotification", {
                 Title = "Laam Hub 🇻🇳",
                 Text = "❌ Mở Ronix Hub thất bại!",
+                Duration = 3
+            })
+            warn(err)
+        end
+
+    end
+})
+
+AddButton(Tab9o, {
+    Name = "Axonic Hub",
+    Callback = function()
+
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+            Title = "Laam Hub 🇻🇳",
+            Text = "Đang mở Axonic Hub...",
+            Duration = 3
+        })
+
+        local success, err = pcall(function()
+            loadstring(game:HttpGet(
+              "https://raw.githubusercontent.com/Kenniel123/Grow-A-Garden-2/refs/heads/main/Grow%20A%20Garden%202"))(),
+
+        end)
+
+        if success then
+            game:GetService("StarterGui"):SetCore("SendNotification", {
+                Title = "Laam Hub 🇻🇳",
+                Text = "✅ Đã mở Axonic Hub thành công!",
+                Duration = 3
+            })
+        else
+            game:GetService("StarterGui"):SetCore("SendNotification", {
+                Title = "Laam Hub 🇻🇳",
+                Text = "❌ Mở Axonic Hub thất bại!",
+                Duration = 3
+            })
+            warn(err)
+        end
+    end
+})
+
+AddButton(Tab9o, {
+    Name = "Matrix Hub",
+    Callback = function()
+
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+            Title = "Laam Hub 🇻🇳",
+            Text = "Đang mở Matrix Hub...",
+            Duration = 3
+        })
+
+        local success, err = pcall(function()
+            loadstring(game:HttpGet(
+              "https://matrixmod.site/loader/18"))(),
+        end)
+
+        if success then
+            game:GetService("StarterGui"):SetCore("SendNotification", {
+                Title = "Laam Hub 🇻🇳",
+                Text = "✅ Đã mở Matrix Hub thành công!",
+                Duration = 3
+            })
+        else
+            game:GetService("StarterGui"):SetCore("SendNotification", {
+                Title = "Laam Hub 🇻🇳",
+                Text = "❌ Mở Matrix Hub thất bại!",
+                Duration = 3
+            })
+            warn(err)
+        end
+
+    end
+})
+
+AddButton(Tab4o, {
+    Name = "Script Bug Robux",
+    Callback = function()
+
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+            Title = "Laam Hub 🇻🇳",
+            Text = "Đang mở Script Bug Robux...",
+            Duration = 3
+        })
+
+        local success, err = pcall(function()
+             loadstring(game:HttpGet(
+              "https://api.luarmor.net/files/v4/loaders/4f220b52905d70e4e7600fcc073fac2a.lua"))(),
+        end)
+
+        if success then
+            game:GetService("StarterGui"):SetCore("SendNotification", {
+                Title = "Laam Hub 🇻🇳",
+                Text = "✅ Đã mở Script Bug Robux thành công!",
+                Duration = 3
+            })
+        else
+            game:GetService("StarterGui"):SetCore("SendNotification", {
+                Title = "Laam Hub 🇻🇳",
+                Text = "❌ Mở Script Bug Robux thất bại!",
+                Duration = 3
+            })
+            warn(err)
+        end
+
+    end
+})
+
+AddButton(Tab1o, {
+    Name = "👤 Chủ Script: Laam",
+    Callback = function()
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+            Title = "Laam Hub 🇻🇳",
+            Text = "Chủ Script: Laam",
+            Duration = 3
+        })
+    end
+})
+
+AddButton(Tab1o, {
+    Name = "🎵 TikTok: Laam",
+    Callback = function()
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+            Title = "Laam Hub 🇻🇳",
+            Text = "TikTok: Laam",
+            Duration = 3
+        })
+    end
+})
+
+AddButton(Tab1o, {
+    Name = "📱 Zalo: 0942062013",
+    Callback = function()
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+            Title = "Laam Hub 🇻🇳",
+            Text = "Zalo Support: 0942062013",
+            Duration = 3
+        })
+    end
+})
+
+AddButton(Tab9o, {
+    Name = "AJJANS Hub",
+    Callback = function()
+
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+            Title = "Laam Hub 🇻🇳",
+            Text = "Đang mở AJJANS Hub...",
+            Duration = 3
+        })
+
+        local success, err = pcall(function()
+             loadstring(game:HttpGet(
+              "https://api.luarmor.net/files/v4/loaders/359e97f8618e9008afe5f496184ebb7c.lua"))()
+
+            
+
+        end)
+
+        if success then
+            game:GetService("StarterGui"):SetCore("SendNotification", {
+                Title = "Laam Hub 🇻🇳",
+                Text = "✅ Đã mở AJJANS Hub Hub thành công!",
+                Duration = 3
+            })
+        else
+            game:GetService("StarterGui"):SetCore("SendNotification", {
+                Title = "Laam Hub 🇻🇳",
+                Text = "❌ Mở AJJANS Hub thất bại!",
+                Duration = 3
+            })
+            warn(err)
+        end
+
+    end
+})
+
+AddButton(Tab9o, {
+    Name = "WisHub",
+    Callback = function()
+
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+            Title = "Laam Hub 🇻🇳",
+            Text = "Đang mở WisHub ...",
+            Duration = 3
+        })
+
+        local success, err = pcall(function()
+             loadstring(game:HttpGet("https://api.wishub.cloud/files/loader.lua"))(),
+            
+        end)
+
+        if success then
+            game:GetService("StarterGui"):SetCore("SendNotification", {
+                Title = "Laam Hub 🇻🇳",
+                Text = "✅ Đã mở WisHub  thành công!",
+                Duration = 3
+            })
+        else
+            game:GetService("StarterGui"):SetCore("SendNotification", {
+                Title = "Laam Hub 🇻🇳",
+                Text = "❌ Mở WisHub  thất bại!",
+                Duration = 3
+            })
+            warn(err)
+        end
+
+    end
+})
+
+AddButton(Tab8o, {
+    Name = "Hermanos Hub",
+    Callback = function()
+
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+            Title = "Laam Hub 🇻🇳",
+            Text = "Đang mở Axonic Hub...",
+            Duration = 3
+        })
+
+        local success, err = pcall(function()
+
+            local script_mode = "PVP" -- PVP, FARM
+
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/hermanos-dev/hermanos-hub/refs/heads/main/Loader.lua"))(),
+
+        end)
+
+        if success then
+            game:GetService("StarterGui"):SetCore("SendNotification", {
+                Title = "Laam Hub 🇻🇳",
+                Text = "✅ Đã mở Hermanos Hub Hub thành công!",
+                Duration = 3
+            })
+        else
+            game:GetService("StarterGui"):SetCore("SendNotification", {
+                Title = "Laam Hub 🇻🇳",
+                Text = "❌ Mở Hermanos Hub thất bại!",
                 Duration = 3
             })
             warn(err)
