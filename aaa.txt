@@ -5,7 +5,7 @@ local player = game.Players.LocalPlayer
        local Window = MakeWindow({
          Hub = {
          Title = "Laam Hub 🇻🇳 | " .. player.Name .. " | Script Tổng hợp",
-         Animation = "Tiktok:Laam"
+         Animation = "Laam Hub 🇻🇳"
          },
         Key = {
         KeySystem = false,
@@ -578,7 +578,7 @@ AddButton(Tab8o, {
 })
 
 AddButton(Tab5o, {
-    Name = "Teddy Hub ",
+    Name = "Teddy Hub Hop sever | key:TEDDYHUB-Kcl4729Op18  ",
     Callback = function()
 
         game:GetService("StarterGui"):SetCore("SendNotification", {
@@ -680,7 +680,240 @@ AddButton(Tab7o, {
     end
 })
 
+AddButton(Tab9o, {
+    Name = "Teddy Hub",
+    Callback = function()
 
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+            Title = "Laam Hub 🇻🇳",
+            Text = "Đang mở Teddy Hub...",
+            Duration = 3
+        })
+
+        local success, err = pcall(function()
+           repeat task.wait() until game:IsLoaded() and game:GetService("Players") and game.Players.LocalPlayer and game.Players.LocalPlayer:FindFirstChild("PlayerGui")
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Teddyseetink/Haidepzai/refs/heads/main/main.lua"))() 
+
+
+        end)
+
+        if success then
+            game:GetService("StarterGui"):SetCore("SendNotification", {
+                Title = "Laam Hub 🇻🇳",
+                Text = "✅ Đã mở Teddy Hub thành công!",
+                Duration = 3
+            })
+        else
+            game:GetService("StarterGui"):SetCore("SendNotification", {
+                Title = "Laam Hub 🇻🇳",
+                Text = "❌ Mở Teddy Hub thất bại!",
+                Duration = 3
+            })
+            warn(err)
+        end
+
+    end
+})
+
+AddButton(Tab9, {
+    Name = "Lumin Hub"
+    Callback = function()
+
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+            Title = "Laam Hub 🇻🇳",
+            Text = "Đang mở  Lumin Hub...",
+            Duration = 3
+        })
+
+        local success, err = pcall(function()
+            loadstring(game:HttpGet("http://luminon.top/loader.lua"))()
+        end)
+
+        if success then
+            game:GetService("StarterGui"):SetCore("SendNotification", {
+                Title = "Laam Hub 🇻🇳",
+                Text = "✅ Đã mở  Lumin Hub thành công!",
+                Duration = 3
+            })
+        else
+            game:GetService("StarterGui"):SetCore("SendNotification", {
+                Title = "Laam Hub 🇻🇳",
+                Text = "❌ Mở  Lumin Hub thất bại!",
+                Duration = 3
+            })
+            warn(err)
+        end
+
+    end
+})
+
+AddButton(Tab7o, {
+    Name = "🤖 Kaitun Get Cyborg",
+    Callback = function()
+
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+            Title = "Laam Hub 🇻🇳",
+            Text = "Đang mở Kaitun Get Cyborg...",
+            Duration = 3
+        })
+
+        local success, err = pcall(function()
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/mizuharasup/free/refs/heads/main/cy.lua"))()
+           
+        end)
+
+        if success then
+            game:GetService("StarterGui"):SetCore("SendNotification", {
+                Title = "Laam Hub 🇻🇳",
+                Text = "✅ Đã mở Kaitun Get Cyborg thành công!",
+                Duration = 3
+            })
+        else
+            game:GetService("StarterGui"):SetCore("SendNotification", {
+                Title = "Laam Hub 🇻🇳",
+                Text = "❌ Mở Kaitun Get Cyborg thất bại!",
+                Duration = 3
+            })
+            warn(err)
+        end
+
+    end
+})
+
+AddButton(Tab7o, {
+    Name = "🚀 Night X Hub | Kaitun 1 To 2800",
+    Callback = function()
+
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+            Title = "Laam Hub 🇻🇳",
+            Text = "Đang mở Night X Hub Kaitun 1 To 2800...",
+            Duration = 3
+        })
+
+        local success, err = pcall(function()
+
+             getgenv().Config = {
+
+    Team = "Pirates",
+
+    FarmConfig = {
+
+        ["Out game when done all"] = true,
+
+        ["Bypass Teleport"] = true,
+
+        ["Double Quest(RISK)"] = true
+
+    },
+
+    Items = {
+
+        ["Saber"] = true,
+
+        ["Pole (1st form)"] = true,
+
+        ["Skull Guitar"] = true,
+
+        ["Cursed Dual Katana"] = true,
+
+        ["Godhuman"] = true
+
+    },
+
+    Webhook = {
+
+        ["Enabled"] = false,
+
+        ["Url"] = ""
+
+    }
+
+}
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/d6c7959dcc94cd24467080d82a56dcf9.lua"))()
+
+        end)
+
+        if success then
+            game:GetService("StarterGui"):SetCore("SendNotification", {
+                Title = "Laam Hub 🇻🇳",
+                Text = "✅ Đã mở Night X Hub Kaitun 1 To 2800 thành công!",
+                Duration = 3
+            })
+        else
+            game:GetService("StarterGui"):SetCore("SendNotification", {
+                Title = "Laam Hub 🇻🇳",
+                Text = "❌ Mở Night X Hub Kaitun 1 To 2800 thất bại!",
+                Duration = 3
+            })
+            warn(err)
+        end
+
+    end
+})
+
+
+AddButton(Tab7o, {
+    Name = "Nat Aov Kaitun Hub",
+    Callback = function()
+
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+            Title = "Laam Hub 🇻🇳",
+            Text = "Đang mở Nat Aov Kaitun Hub",
+            Duration = 3
+        })
+
+        local success, err = pcall(function()
+           loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-AnhTuansitink/NatAov-Hub/refs/heads/main/NatAovKaitunBF.lua"))()
+        end)
+
+        if success then
+            game:GetService("StarterGui"):SetCore("SendNotification", {
+                Title = "Laam Hub 🇻🇳",
+                Text = "✅ Đã mở Nat Aov Kaitun Hub thành công!",
+                Duration = 3
+            })
+        else
+            game:GetService("StarterGui"):SetCore("SendNotification", {
+                Title = "Laam Hub 🇻🇳",
+                Text = "❌ Mở Nat Aov Kaitun Hub thất bại!",
+                Duration = 3
+            })
+            warn(err)
+        end
+    end
+})
+
+AddButton(Tab7o, {
+    Name = "Orange Hub Kaitun",
+    Callback = function()
+
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+            Title = "Laam Hub 🇻🇳",
+            Text = "Đang mở Orange Hub Kaitun",
+            Duration = 3
+        })
+
+        local success, err = pcall(function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/HieuDepTrai-Z/Dev_OrangeVip/refs/heads/main/OrangeKaitun.lua"))()
+        end)
+
+        if success then
+            game:GetService("StarterGui"):SetCore("SendNotification", {
+                Title = "Laam Hub 🇻🇳",
+                Text = "✅ Đã mở Orange Hub Kaitun thành công!",
+                Duration = 3
+            })
+        else
+            game:GetService("StarterGui"):SetCore("SendNotification", {
+                Title = "Laam Hub 🇻🇳",
+                Text = "❌ Mở Orange Hub Kaitun thất bại!",
+                Duration = 3
+            })
+            warn(err)
+        end
+    end
+})
 
 
 
