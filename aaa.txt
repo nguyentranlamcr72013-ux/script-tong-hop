@@ -715,7 +715,7 @@ AddButton(Tab9o, {
     end
 })
 
-AddButton(Tab9, {
+AddButton(Tab9o, {
     Name = "Lumin Hub"
     Callback = function()
 
