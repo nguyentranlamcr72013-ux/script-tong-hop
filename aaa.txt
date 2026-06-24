@@ -716,7 +716,7 @@ AddButton(Tab9o, {
 })
 
 AddButton(Tab9o, {
-    Name = "Lumin Hub"
+    Name = "Lumin Hub",
     Callback = function()
 
         game:GetService("StarterGui"):SetCore("SendNotification", {
