@@ -915,6 +915,45 @@ AddButton(Tab7o, {
     end
 })
 
+AddButton(Tab4o, {
+    Name = "Laam Hub",
+    Callback = function()
+
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+            Title = "Laam Hub 🇻🇳",
+            Text = "Đang mở Laam Hub...",
+            Duration = 3
+        })
+
+        local success, err = pcall(function()
+            -- this script created at https://lambloxfruitscript.vercel.app/
+             getgenv().ScriptTitle = "Laam Hub 🇻🇳"
+             getgenv().ScriptSubTitle = "By Laam"
+             getgenv().ScriptImage = "https://i.ibb.co/s9p5R9rr/z7970801294705-109e41923f82b74459d2e3773da20142.jpg"
+             getgenv().ScriptAuthorName = "Laam Hub"
+             getgenv().ScriptAuthorSubTitle = "https://www.tiktok.com/@vuatuat2206"
+             loadstring(game:HttpGet("https://raw.githubusercontent.com/hoannhatz/Script/refs/heads/main/EZScript.lua"))()
+        end)
+
+        if success then
+            game:GetService("StarterGui"):SetCore("SendNotification", {
+                Title = "Laam Hub 🇻🇳",
+                Text = "✅ Đã mở Laam Hub thành công!",
+                Duration = 3
+            })
+        else
+            game:GetService("StarterGui"):SetCore("SendNotification", {
+                Title = "Laam Hub 🇻🇳",
+                Text = "❌ Mở Laam Hub   thất bại!",
+                Duration = 3
+            })
+            warn(err)
+        end
+    end
+})
+
+ 
+
 
 
 
