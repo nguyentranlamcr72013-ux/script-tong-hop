@@ -34,15 +34,15 @@ local player = game.Players.LocalPlayer
 ------ Tab
      local Tab1o = MakeTab({Name = "Giới thiệu"})
      local Tab2o = MakeTab({Name = "Script Redz Hub"})
-     local Tab3o = MakeTab({Name = "Script Banana Hub"})
-     local Tab4o = MakeTab({Name = "Script khác"})
-     local Tab5o = MakeTab({Name = "Hop Server Blox Fruit"})
-     local Tab6o = MakeTab({Name = "Sailor Piece"})
-     local Tab7o = MakeTab({Name = "Kaitun Blox Fruit"})
-     local Tab8o = MakeTab({Name = "Farm Bounty"})
-     local Tab9o = MakeTab({Name = "Grow A Garden 2"})
-     local Tab10o = MakeTab({Name ="99 Nights In The Forest"})
-     local Tab11o = MakeTab({Name ="Cài Đặt"})
+     local Tab3o = MakeTab({Name =  "Script Banana Hub"})
+     local Tab4o = MakeTab({Name =  "Script khác"})
+     local Tab5o = MakeTab({Name =  "Hop Server Blox Fruit"})
+     local Tab6o = MakeTab({Name =  "Sailor Piece"})
+     local Tab7o = MakeTab({Name =  "Kaitun Blox Fruit"})
+     local Tab8o = MakeTab({Name =  "Farm Bounty"})
+     local Tab9o = MakeTab({Name =  "Grow A Garden 2"})
+     local Tab10o = MakeTab({Name = "99 Nights In The Forest"})
+     local Tab11o = MakeTab({Name = "Cài Đặt"})
 
 
 ------- BUTTON
@@ -976,7 +976,7 @@ AddButton(Tab4o, {
         else
             game:GetService("StarterGui"):SetCore("SendNotification", {
                 Title = "Laam Hub 🇻🇳",
-                Text = "❌ Mở Laam Hub   thất bại!",
+                Text = "❌ Mở Laam Hub thất bại!",
                 Duration = 3
             })
             warn(err)
@@ -984,70 +984,7 @@ AddButton(Tab4o, {
     end
 })
 
-AddButton(Tab4o, {
-    Name = "W-Azure Premium Eng",
-    Callback = function()
 
-        game:GetService("StarterGui"):SetCore("SendNotification", {
-            Title = "Laam Hub 🇻🇳",
-            Text = "Đang mở W-Azure Premium Eng...",
-            Duration = 3
-        })
-
-        local success, err = pcall(function()
-            getgenv().Language = "English"
-             loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaAnarchist/YeuEmNhieuLam/refs/heads/main/w-azure.luau"))()
-        end)
-
-        if success then
-            game:GetService("StarterGui"):SetCore("SendNotification", {
-                Title = "Laam Hub 🇻🇳",
-                Text = "✅ Đã mở W-Azure Premium Eng thành công!",
-                Duration = 3
-            })
-        else
-            game:GetService("StarterGui"):SetCore("SendNotification", {
-                Title = "Laam Hub 🇻🇳",
-                Text = "❌ Mở W-Azure Premium Eng thất bại!",
-                Duration = 3
-            })
-            warn(err)
-        end
-    end
-})
-
-AddButton(Tab4o, {
-    Name = "W-Azure Premium Vie",
-    Callback = function()
-
-        game:GetService("StarterGui"):SetCore("SendNotification", {
-            Title = "Laam Hub 🇻🇳",
-            Text = "Đang mở W-Azure Premium Vie...",
-            Duration = 3
-        })
-
-        local success, err = pcall(function()
-            getgenv().Language = "Vietnamese"
-             loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaAnarchist/YeuEmNhieuLam/refs/heads/main/w-azure.luau"))()
-
-        end)
-
-        if success then
-            game:GetService("StarterGui"):SetCore("SendNotification", {
-                Title = "Laam Hub 🇻🇳",
-                Text = "✅ Đã mở W-Azure Premium Vie thành công!",
-                Duration = 3
-            })
-        else
-            game:GetService("StarterGui"):SetCore("SendNotification", {
-                Title = "Laam Hub 🇻🇳",
-                Text = "❌ Mở W-Azure Premium Vie thất bại!",
-                Duration = 3
-            })
-            warn(err)
-        end
-    end
-})
 
 AddButton(Tab5o, {
     Name = "Script TeleFruits(BlueXHub)",
