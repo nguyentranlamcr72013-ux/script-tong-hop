@@ -1,27 +1,27 @@
-loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V2/refs/heads/main/UiREDzV2.lua")))()
+local Rayfield = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
 
 local player = game.Players.LocalPlayer
 
-       local Window = MakeWindow({
-         Hub = {
-         Title = "Laam Hub 🇻🇳 | " .. player.Name .. " | Script Tổng hợp",
-         Animation = "Laam Hub 🇻🇳"
-         },
-        Key = {
-        KeySystem = false,
-        Title = "Key System",
-        Description = "",
-        KeyLink = "",
-        Keys = {"1234"},
-        Notifi = {
-        Notifications = true,
-        CorrectKey = "Running the Script...",
-       Incorrectkey = "The key is incorrect",
-       CopyKeyLink = "Copied to Clipboard"
-      }
-    }
-  })
+local Window = Rayfield:CreateWindow({
+    Name = "Laam Hub 🇻🇳 | " .. player.Name,
+    LoadingTitle = "Laam Hub 🇻🇳",
+    LoadingSubtitle = "Script Tổng Hợp",
+    Theme = "Default",
 
+    ConfigurationSaving = {
+        Enabled = true,
+        FolderName = "LaamHub",
+        FileName = "Config"
+    },
+
+    Discord = {
+        Enabled = false,
+        Invite = "",
+        RememberJoins = false
+    },
+
+    KeySystem = false
+})
        MinimizeButton({
        Image = "http://www.roblox.com/asset/?id=140195571610155",
        Size = {60, 60},
@@ -32,17 +32,21 @@ local player = game.Players.LocalPlayer
       })
       
 ------ Tab
-     local Tab1o = MakeTab({Name = "📖 Giới thiệu"})
-     local Tab2o = MakeTab({Name = "🔴 Script Redz Hub"})
-     local Tab3o = MakeTab({Name = "🍌 Script Banana Hub"})
-     local Tab4o = MakeTab({Name = "📦 Script khác"})
-     local Tab5o = MakeTab({Name = "🔄 Hop Server Blox Fruit"})
-     local Tab6o = MakeTab({Name = "🏴‍☠️ Sailor Piece"})
-     local Tab7o = MakeTab({Name = "⚔️ Kaitun Blox Fruit"})
-     local Tab8o = MakeTab({Name = "💀 Farm Bounty"})
-     local Tab9o = MakeTab({Name = "🌱 Grow A Garden 2"})
-     local Tab10o = MakeTab({Name = "🌙 99 Nights In The Forest"})
-     local Tab11o = MakeTab({Name = "⚙️ Cài Đặt"})
+     local Tab1o = MakeTab({Name = "Giới thiệu"})
+     local Tab2o = MakeTab({Name = "Script Redz Hub"})
+     local Tab3o = MakeTab({Name =  "Script Banana Hub"})
+     local Tab4o = MakeTab({Name =  "Script khác"})
+     local Tab5o = MakeTab({Name =  "Hop Server Blox Fruit"})
+     local Tab6o = MakeTab({Name =  "Sailor Piece"})
+     local Tab7o = MakeTab({Name =  "Kaitun Blox Fruit"})
+     local Tab8o = MakeTab({Name =  "Farm Bounty"})
+     local Tab9o = MakeTab({Name =  "Grow A Garden 2"})
+     local Tab10o = MakeTab({Name = "99 Nights In The Forest"})
+     local Tab11o = MakeTab({Name = "Evomon"})
+     local Tab12o = MakeTab({Name = "animal hospital"})
+     local Tab13o = MakeTab({Name = "paint to hide"})
+     local Tab14o = MakeTab({Name = "Strongstrongest battlegrounds"})
+     local Tab15o = MakeTab({Name = "Anime defender"})
 
 
 ------- BUTTON
@@ -916,7 +920,7 @@ AddButton(Tab7o, {
 })
 
 AddButton(Tab4o, {
-    Name = "Laam Hub",
+    Name = "W-Azure Premium",
     Callback = function()
 
         game:GetService("StarterGui"):SetCore("SendNotification", {
@@ -929,7 +933,7 @@ AddButton(Tab4o, {
             -- this script created at https://lambloxfruitscript.vercel.app/
              getgenv().ScriptTitle = "Laam Hub 🇻🇳"
              getgenv().ScriptSubTitle = "By Laam"
-             getgenv().ScriptImage = "https://i.ibb.co/s9p5R9rr/z7970801294705-109e41923f82b74459d2e3773da20142.jpg"
+             getgenv(W-Azure Premium).ScriptImage = "https://i.ibb.co/s9p5R9rr/z7970801294705-109e41923f82b74459d2e3773da20142.jpg"
              getgenv().ScriptAuthorName = "Laam Hub"
              getgenv().ScriptAuthorSubTitle = "https://www.tiktok.com/@vuatuat2206"
              loadstring(game:HttpGet("https://raw.githubusercontent.com/hoannhatz/Script/refs/heads/main/EZScript.lua"))()
@@ -951,6 +955,105 @@ AddButton(Tab4o, {
         end
     end
 })
+
+AddButton(Tab4o, {
+    Name = "Laam Hub",
+    Callback = function()
+
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+            Title = "Laam Hub 🇻🇳",
+            Text = "Đang mở Laam Hub...",
+            Duration = 3
+        })
+
+        local success, err = pcall(function()
+            getgenv().Language = "English"
+             loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaAnarchist/YeuEmNhieuLam/refs/heads/main/w-azure.luau"))()
+        end)
+
+        if success then
+            game:GetService("StarterGui"):SetCore("SendNotification", {
+                Title = "Laam Hub 🇻🇳",
+                Text = "✅ Đã mở Laa thành công!",
+                Duration = 3
+            })
+        else
+            game:GetService("StarterGui"):SetCore("SendNotification", {
+                Title = "Laam Hub 🇻🇳",
+                Text = "❌ Mở Laam Hub thất bại!",
+                Duration = 3
+            })
+            warn(err)
+        end
+    end
+})
+
+AddButton(Tab5o, {
+    Name = "Script TeleFruits(BlueXHub)",
+    Callback = function()
+
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+            Title = "Laam Hub 🇻🇳",
+            Text = "Đang mở Script TeleFruits(BlueXHub)..",
+            Duration = 3
+        })
+
+        local success, err = pcall(function()
+            getgenv().Language = "Vietnamese"
+             loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaAnarchist/YeuEmNhieuLam/refs/heads/main/w-azure.luau"))()
+
+        end)
+
+        if success then
+            game:GetService("StarterGui"):SetCore("SendNotification", {
+                Title = "Laam Hub 🇻🇳",
+                Text = "✅ Đã mở Script TeleFruits(BlueXHub) thành công!",
+                Duration = 3
+            })
+        else
+            game:GetService("StarterGui"):SetCore("SendNotification", {
+                Title = "Laam Hub 🇻🇳",
+                Text = "❌ Mở Script TeleFruits(BlueXHub) thất bại!",
+                Duration = 3
+            })
+            warn(err)
+        end
+    end
+})
+
+AddButton(Tab11o, {
+    Name = "Kaioshin3",
+    Callback = function()
+
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+            Title = "Laam Hub 🇻🇳",
+            Text = "Đang mở Script Kaioshin3..",
+            Duration = 3
+        })
+
+        local success, err = pcall(function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaioshin3/evomon/refs/heads/main/vip"))()
+        end)
+
+        if success then
+            game:GetService("StarterGui"):SetCore("SendNotification", {
+                Title = "Laam Hub 🇻🇳",
+                Text = "✅ Đã mở Script Kaioshin3 thành công!",
+                Duration = 3
+            })
+        else
+            game:GetService("StarterGui"):SetCore("SendNotification", {
+                Title = "Laam Hub 🇻🇳",
+                Text = "❌ Mở Script Kaioshin3 thất bại!",
+                Duration = 3
+            })
+            warn(err)
+        end
+    end
+})
+`
+
+
 
  
 
